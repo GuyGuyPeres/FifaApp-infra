@@ -38,3 +38,9 @@ variable "tfc_workspace" {
   type        = string
   default     = "fifaapp-eks"
 }
+
+variable "github_org" {
+  description = "GitHub organization or username that owns the app repos"
+  type        = string
+  default     = "GuyGuyPeres"
+}

@@ -25,3 +25,8 @@ output "ecr_registry" {
   description = "ECR registry base URL — use this for 'docker login'"
   value       = split("/", aws_ecr_repository.frontend.repository_url)[0]
 }
+
+output "gha_role_arn" {
+  description = "Set this as AWS_ROLE_ARN secret in FifaApp-backend and FifaApp-frontend"
+  value       = aws_iam_role.github_actions.arn
+}
