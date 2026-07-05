@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 535659318213.dkr.ecr.us-east-1.amazonaws.com/fifaapp-backend:e760744
+          image: 535659318213.dkr.ecr.us-east-1.amazonaws.com/fifaapp-backend:c9c73f1
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
